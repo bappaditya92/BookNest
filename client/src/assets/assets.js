@@ -76,10 +76,10 @@ export const assets = {
 }
 
 export const cities = [
-    "Dubai",
-    "Singapore",
-    "New York",
-    "London",
+    "Delhi",
+    "Mumbai",
+    "Kolkata",
+    "Chennai",
 ];
 
 // ------------------------------------------Exclusive Offers Dummy Data------------------------------------------
@@ -107,35 +107,36 @@ export const facilityIcons = {
 
 // ------------------------------------------For Room Details Page------------------------------------------
 export const roomCommonData = [
-    { icon: assets.homeIcon, title: "Clean & Safe Stay", description: "A well-maintained and hygienic space just for you." },
-    { icon: assets.badgeIcon, title: "Enhanced Cleaning", description: "This host follows Staybnb's strict cleaning standards." },
-    { icon: assets.locationFilledIcon, title: "Excellent Location", description: "90% of guests rated the location 5 stars." },
-    { icon: assets.heartIcon, title: "Smooth Check-In", description: "100% of guests gave check-in a 5-star rating." },
+    { icon: assets.homeIcon, title: "Spotless & Secure", description: "Enjoy a pristine, sanitized space designed for your comfort." },
+    { icon: assets.badgeIcon, title: "Top-Tier Cleanliness", description: "Meticulously cleaned to meet Staybnb's highest hygiene standards." },
+    { icon: assets.locationFilledIcon, title: "Prime Spot", description: "Located where 90% of guests gave a perfect 5-star rating." },
+    { icon: assets.heartIcon, title: "Hassle-Free Arrival", description: "Guests consistently rated check-in with a perfect 5 stars." },
 ];
 
+
 // ------------------------------------------User Dummy Data------------------------------------------
-export const userDummyData = {
+export const dummyUser = {
     "_id": "user_2unqyL4diJFP1E3pIBnasc7w8hP",
-    "username": "Great Stack",
-    "email": "user.greatstack@gmail.com",
-    "image": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvdXBsb2FkZWQvaW1nXzJ2N2c5YVpSSEFVYVUxbmVYZ2JkSVVuWnFzWSJ9",
+    "username": "Bappaditya",
+    "email": "test.bappaditya@gmail.com",
+    "image": "https://drive.google.com/file/d/1TmV86Tiu7Ev-nOurTG54y7GzHu1WUniO/view?usp=drive_link",
     "role": "hotelOwner",
     "createdAt": "2025-03-25T09:29:16.367Z",
     "updatedAt": "2025-04-10T06:34:48.719Z",
     "__v": 1,
     "recentSearchedCities": [
-        "New York"
+        "New Delhi"
     ]
 }
 
 //------------------------------------------ Hotel Dummy Data------------------------------------------
-export const hotelDummyData = {
+export const hotelSonarTori= {
     "_id": "67f76393197ac559e4089b72",
     "name": "Urbanza Suites",
     "address": "Main Road  123 Street , 23 Colony",
-    "contact": "+0123456789",
-    "owner": userDummyData,
-    "city": "New York",
+    "contact": "+919876543210",
+    "owner": dummyUser,
+    "city": "Chennai",
     "createdAt": "2025-04-10T06:22:11.663Z",
     "updatedAt": "2025-04-10T06:22:11.663Z",
     "__v": 0
@@ -145,7 +146,7 @@ export const hotelDummyData = {
 export const roomsDummyData = [
     {
         "_id": "67f7647c197ac559e4089b96",
-        "hotel": hotelDummyData,
+        "hotel": hotelSonarTori,
         "roomType": "Double Bed",
         "pricePerNight": 399,
         "amenities": ["Room Service", "Mountain View", "Pool Access"],
@@ -157,7 +158,7 @@ export const roomsDummyData = [
     },
     {
         "_id": "67f76452197ac559e4089b8e",
-        "hotel": hotelDummyData,
+        "hotel": hotelSonarTori,
         "roomType": "Double Bed",
         "pricePerNight": 299,
         "amenities": ["Room Service", "Mountain View", "Pool Access"],
@@ -169,7 +170,7 @@ export const roomsDummyData = [
     },
     {
         "_id": "67f76406197ac559e4089b82",
-        "hotel": hotelDummyData,
+        "hotel": hotelSonarTori,
         "roomType": "Double Bed",
         "pricePerNight": 249,
         "amenities": ["Free WiFi", "Free Breakfast", "Room Service"],
@@ -181,7 +182,7 @@ export const roomsDummyData = [
     },
     {
         "_id": "67f763d8197ac559e4089b7a",
-        "hotel": hotelDummyData,
+        "hotel": hotelSonarTori,
         "roomType": "Single Bed",
         "pricePerNight": 199,
         "amenities": ["Free WiFi", "Room Service", "Pool Access"],
@@ -199,9 +200,9 @@ export const roomsDummyData = [
 export const userBookingsDummyData = [
     {
         "_id": "67f76839994a731e97d3b8ce",
-        "user": userDummyData,
+        "user": dummyUser,
         "room": roomsDummyData[1],
-        "hotel": hotelDummyData,
+        "hotel": hotelSonarTori,
         "checkInDate": "2025-04-30T00:00:00.000Z",
         "checkOutDate": "2025-05-01T00:00:00.000Z",
         "totalPrice": 299,
@@ -215,9 +216,9 @@ export const userBookingsDummyData = [
     },
     {
         "_id": "67f76829994a731e97d3b8c3",
-        "user": userDummyData,
+        "user": dummyUser,
         "room": roomsDummyData[0],
-        "hotel": hotelDummyData,
+        "hotel": hotelSonarTori,
         "checkInDate": "2025-04-27T00:00:00.000Z",
         "checkOutDate": "2025-04-28T00:00:00.000Z",
         "totalPrice": 399,
@@ -231,9 +232,9 @@ export const userBookingsDummyData = [
     },
     {
         "_id": "67f76810994a731e97d3b8b4",
-        "user": userDummyData,
+        "user": dummyUser,
         "room": roomsDummyData[3],
-        "hotel": hotelDummyData,
+        "hotel": hotelSonarTori,
         "checkInDate": "2025-04-11T00:00:00.000Z",
         "checkOutDate": "2025-04-12T00:00:00.000Z",
         "totalPrice": 199,
